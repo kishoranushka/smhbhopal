@@ -248,7 +248,7 @@ html {
 }
 
 .recent-Heading {
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
 }
 
@@ -305,12 +305,12 @@ html {
 
 .mediaWrap{
   padding: 0 300px;
-  background-color: pink;
+  /* background-color: pink; */
   margin-top: 100px;
 }
 
 .mediaContainer{
-  background-color: yellow;
+  /* background-color: yellow; */
   width: 100%;
   /* display: flex; */
   text-align: center;
@@ -325,9 +325,10 @@ html {
 
 
 .media-Heading{
-  font-size: 30px;
+  font-size: 36px;
   font-weight: 600;
 }
+
 
 .MediaImg{
   margin-top: 50px;
@@ -336,15 +337,122 @@ html {
   /* background-color: white; */
 }
 
-.MediaImg image{
-  padding: 10px;
-  width: 305.25px;
-  height: 300px;
-  background-color: gray;
-
+.image{
+  position: relative;
+width: 305.25px;
+height: 300px;
+background-color: white;
+padding: 10px;
+box-shadow: inset gray 0 0px 5px 0  ;
+border: solid rgb(192, 184, 184) 1px;
 }
+
 .MediaImg img{
   /* padding: 10px; */
   width: 273.25px;
   height: 268px;
+}
+
+.mediaNewsDate{
+  padding: 15px;
+  text-align: center;
+  position: absolute;
+  font-size: 18px;
+  background: rgba(2, 2, 2, 0.6);
+  /* border-radius: 16px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(7.9px);
+  width: 100%;
+  color: white;
+  font: bold;
+  bottom: 0;
+  left: 0;
+}
+
+/* Insurance CSS */
+
+.insuranceWrap{
+  margin-top: 100px;
+  padding: 0 300px;
+}
+
+.insuranceContainer{
+  width: 100%;
+  background: -webkit-linear-gradient(#4cb848, #aed035);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.insurance-Heading{
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.insuranceCards{
+  width: 100%;
+  height: 155.75px;
+  margin-top: 30px;
+  background-color: #4cb848;
+  display: flex;
+  gap: 10px;
+  justify-content: start;
+  align-items: center;
+}
+
+.insuranceCardImg{
+  overflow: hidden;
+  /* background-size: cover; */
+  width: 230px;
+  height: 143.75px;
+  border-radius: 5px;
+  background-color: #232420;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+}
+
+.insuranceCardImg img{
+  max-width: 230px;
+  height: 143.75px;
+}
+
+/* Meet a Doctor */
+
+.doctorWrap{
+  padding: 0 300px;
+  margin-top: 100px;
+}
+
+.doctorContainer{
+  /* background-color: pink; */
+  width: 100%;
+  padding: 0 300px;
+  
+}
+
+.doctorCard{
+  background-color: #fff;
+  text-align: center;
+  padding: 50px ;
+  /* border-radius: 5px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+.doctorCard p{
+font-size: 36px;
+  font-weight: 600;
+  /* text-align: center; */
+  color: #263997;
+}
+
+.OPD{
+  background-color: white;
+  padding: 12px 25px;
+  margin-top: 8px;
+  border-radius: 5px;
+  box-shadow: 4px 6px 15px  rgba(0, 0, 0, 0.3);
+
+  border: none;
 }
