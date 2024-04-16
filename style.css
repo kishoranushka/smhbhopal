@@ -21,17 +21,18 @@ html {
   padding: 16px 300px;
   position: absolute;
   /* position: sticky; */
-  z-index: 1;
+  z-index: 99;
   width: 100%;
   /* top: 0; */
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.04);
   /* border-radius: 16px; */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(12px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(7.9px);
   /* border:  solid rgba(255, 255, 255); */
+  overflow: hidden;
 }
 
 .navContainer {
@@ -55,6 +56,7 @@ html {
 }
 
 .nCRT {
+  margin-bottom: 10px;
   display: flex;
   justify-content: right;
   /* background-color: red; */
@@ -64,20 +66,29 @@ html {
 .nCRTItems {
   cursor: pointer;
   display: flex;
-  gap: 10px;
+  gap: 20px;
   text-align: right;
   /* background-color: red; */
   align-items: center;
 }
 
-.ncRTicon {
+.ncRTicon{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.ncRTicon i {
+  /* display: flex; */
+  /* align-items: center; */
+  justify-content: start;
   cursor: pointer;
-  font-size: 15px;
+  font-size: 22px;
   align-items: center;
   /* background-color: wheat; */
-  width: 50px;
-  height: 50px;
-  padding-top: 10px;
+  /* width: 50px; */
+  /* height: 50px; */
+  /* padding-top: 10px; */
   /* margin-left: 10px; */
 }
 
@@ -98,9 +109,18 @@ html {
   list-style: none;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .backgroundImg {
   /* z-index: 0; */
   /* height: 10vh; */
+  display: flex;
+  overflow-x: auto;
+  scrollbar-width: none;
   position: relative;
   /* position: absolute; */
   width: 100%;
@@ -127,13 +147,13 @@ html {
   line-height: 80px;
   left: -20px;
   top: 520px;
-  z-index: 100;
+  z-index: 10;
 
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.04);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(7.9px);
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(7.9px);
   border: 1px solid rgba(255, 255, 255, 0.38);
 }
@@ -147,6 +167,8 @@ html {
   font-size: 3vw;
   /* position: absolute; */
 }
+
+/* Search CSS */
 
 .searchWrap {
   margin-top: 20px;
@@ -166,6 +188,9 @@ html {
 }
 
 .searchLeft {
+  display: flex;
+  gap: 10px;
+  align-items: center;
   width: 20%;
   padding: 20px 40px;
   font-weight: bold;
@@ -182,6 +207,9 @@ html {
   font-size: 18px;
   background-color: white;
 }
+
+
+/* Sagar Multispeciality Hospital */
 
 .SMHWrap {
   margin-top: 100px;
