@@ -20,6 +20,7 @@ html {
   align-items: center;
   padding: 16px 300px;
   position: absolute;
+  /* position: sticky; */
   z-index: 1;
   width: 100%;
   /* top: 0; */
@@ -42,6 +43,7 @@ html {
 }
 
 .navContainerLeft img {
+  cursor: pointer;
   text-align: right;
   width: 266px;
 }
@@ -60,6 +62,7 @@ html {
 }
 
 .nCRTItems {
+  cursor: pointer;
   display: flex;
   gap: 10px;
   text-align: right;
@@ -68,6 +71,7 @@ html {
 }
 
 .ncRTicon {
+  cursor: pointer;
   font-size: 15px;
   align-items: center;
   /* background-color: wheat; */
@@ -78,6 +82,7 @@ html {
 }
 
 .nCRT button {
+  cursor: pointer;
   padding: 14px 10px;
   color: white;
   background-color: transparent;
@@ -87,6 +92,7 @@ html {
 }
 
 .nCRB ul {
+  cursor: pointer;
   display: flex;
   gap: 15px;
   list-style: none;
@@ -276,6 +282,7 @@ html {
 }
 
 .D-SCard{
+  cursor: pointer;
   flex-shrink: 0;
   padding: 25px;
   border: solid white 1px;
@@ -285,6 +292,15 @@ html {
   /* background-color: paleturquoise; */
 }
 
+.D-SCard:hover{
+  /* From https://css.glass */
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 
 .D-SCard img{
@@ -359,6 +375,7 @@ html {
 }
 
 .recentHappeningsImg1 img {
+  cursor: pointer;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 
   width: 309px;
@@ -367,6 +384,7 @@ html {
 }
 
 .recentHappeningsImg2 img {
+  cursor: pointer;
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 
   width: 309px;
@@ -375,6 +393,7 @@ html {
 }
 
 .recentHappeningsBtn {
+  cursor: pointer;
   padding: 14px 30px;
   margin-top: 40px;
   color: white;
@@ -412,6 +431,7 @@ html {
 }
 
 .MediaImg {
+  cursor: pointer;
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
@@ -485,16 +505,18 @@ html {
 }
 
 .insuranceCardImg {
+  
   flex-shrink: 0;
   /* background-size: cover; */
   width: 230px;
   height: 143.75px;
   border-radius: 5px;
   /* background-color: #232420; */
-  box-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 6px rgba(0.4, 1, 0.4, 0.2);
 }
 
 .insuranceCardImg img {
+  cursor: pointer;
   border-radius: 5px;
   max-width: 230px;
   height: 143.75px;
@@ -529,6 +551,7 @@ html {
 }
 
 .OPD {
+  cursor: pointer;
   background-color: white;
   padding: 12px 25px;
   margin-top: 8px;
@@ -592,6 +615,7 @@ html {
 }
 
 .careLeft button {
+  cursor: pointer;
   padding: 12px 25px;
   background-color: white;
   border-radius: 5px;
@@ -644,9 +668,14 @@ html {
   height: 45px;
   gap: 10px;
   text-align: center;
+  
 }
 
 .icon{
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 45px;
   height: 45px;
   background-color: white;
@@ -673,6 +702,7 @@ html {
 }
 
 .contact{
+  cursor: pointer;;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -700,8 +730,16 @@ html {
   font-weight: 600;
 }
 
+.footerCard3 p{
+  cursor: pointer;
+}
+
 .footerCard4{
   padding: 0 20px;
+}
+
+.footerCard4 p{
+  cursor: pointer;
 }
 
 .footerCard4 h1{
@@ -731,6 +769,8 @@ html {
 }
 
 .rulerWrap p{
+  /* background-color: pink; */
   margin-top: 20px;
+  padding-bottom: 100px;
 }
 
