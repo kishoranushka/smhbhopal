@@ -110,7 +110,8 @@ html {
 
 .slideImg {
   /* position: absolute; */
-  background-size: cover;
+  /* background-size: cover; */
+  object-fit: cover;
   width: 100%;
   height: 100%;
 }
